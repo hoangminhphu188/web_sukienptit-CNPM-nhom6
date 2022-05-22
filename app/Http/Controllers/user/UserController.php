@@ -14,7 +14,7 @@ class UserController extends Controller
     {
         return view('user.about');
     }
-
+// ham hien thi ds event cho user
     public function events()
     {
         $current_date = date('Y-m-d H:i:s');
