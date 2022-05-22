@@ -30,13 +30,13 @@ Route::get('events/search', [UserController::class, 'eventsSearch'])->name('user
 
 Route::get('about', [UserController::class, 'about'])->name('user.about.index');
 
-Route::middleware([CheckAdminNotLogin::class])->group(function () {
+Route::middleware([CheckAdminNotLogin::class])->group(function () { // ham kiem tra admin chua dang nhap
     Route::get('/admin', [AuthController::class, 'index']);
     Route::get('/admin/login', [AuthController::class, 'index'])->name('admin.login');
     Route::post('/admin/login/process', [AuthController::class, 'login'])->name('admin.auth.login');
 });
 
-Route::middleware([CheckAdmin::class])->group(function () {
+Route::middleware([CheckAdmin::class])->group(function () { // ham kiem tra admin da dang nhap
     Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.auth.logout');
 
     Route::get('/admin/events', [EventController::class, 'index'])->name('admin.events.index');
