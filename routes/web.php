@@ -32,8 +32,8 @@ Route::get('about', [UserController::class, 'about'])->name('user.about.index');
 
 Route::middleware([CheckAdminNotLogin::class])->group(function () { // ham kiem tra admin chua dang nhap
     Route::get('/admin', [AuthController::class, 'index']);
-    Route::get('/admin/login', [AuthController::class, 'index'])->name('admin.login');
-    Route::post('/admin/login/process', [AuthController::class, 'login'])->name('admin.auth.login');
+    Route::get('/admin/login', [AuthController::class, 'index'])->name('admin.login');//yeu cau den trang login
+    Route::post('/admin/login/process', [AuthController::class, 'login'])->name('admin.auth.login');//yeu cau dang nhap
 });
 
 Route::middleware([CheckAdmin::class])->group(function () { // ham kiem tra admin da dang nhap
