@@ -179,7 +179,7 @@ class EventController extends Controller
         $event->save();
         return redirect()->route('admin.events.index')->with('success', 'Event updated successfully!');
     }
-
+// ham xoa event
     public function delete(Request $request)
     {
         $event = Event::find($request->id);
