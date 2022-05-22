@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> // định nghĩa về head ,js ,css,....
 <html lang="en">
 
 <head>
