@@ -1,4 +1,4 @@
-@extends('layouts.base') // 
+@extends('layouts.base') // xây dựng trang login
 @section('body')
 
 <body class="full-screen login">
