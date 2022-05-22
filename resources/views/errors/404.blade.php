@@ -15,7 +15,7 @@
                             <a href="{{ route('home') }}" class="btn btn-primary btn-lg">
                                 Take Me Home
                             </a>
-                            <a href="https://www.facebook.com/klpod221/" class="btn btn-default btn-lg"> Contact Support</a>
+                            <a href="https://www.facebook.com/luongnguyensdptit/" class="btn btn-default btn-lg"> Contact Support</a>
                         </div>
                     </div>
                 </div>
