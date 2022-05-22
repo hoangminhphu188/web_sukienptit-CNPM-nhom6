@@ -17,7 +17,7 @@ class EventController extends Controller
         $events = Event::orderBy('id', 'DESC')->paginate($this->paginate);
         return view('admin.events.index', compact('events'));
     }
-
+// ham tim kiem event
     public function search(Request $request)
     {
         $keyword = $request->keyword;
