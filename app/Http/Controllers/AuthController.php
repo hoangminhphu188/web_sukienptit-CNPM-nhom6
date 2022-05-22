@@ -38,7 +38,7 @@ class AuthController extends Controller
             return redirect()->back()->withErrors('Username or password is incorrect!')->withInput();
         }
     }
-
+// ham logout
     public function logout(Request $request)
     {
         $request->session()->forget('admin');
