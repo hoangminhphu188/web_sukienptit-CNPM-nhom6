@@ -24,7 +24,7 @@ class UserController extends Controller
             ->paginate($this->paginate);
         return view('user.events', compact('events'));
     }
-
+// ham tim kiem event cho user
     public function eventsSearch(Request $request)
     {
         $keyword = $request->keyword;
