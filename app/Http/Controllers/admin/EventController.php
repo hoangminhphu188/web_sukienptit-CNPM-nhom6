@@ -1,17 +1,17 @@
 <?php
 
 namespace App\Http\Controllers\admin;
-//Fix
+
 use DateTime;
 use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-// tạo event controller
+
 class EventController extends Controller
 {
     public $paginate = 10;
-
+//ham index hien thi danh sach event trang 
     public function index()
     {
         $events = Event::orderBy('id', 'DESC')->paginate($this->paginate);
