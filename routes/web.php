@@ -44,7 +44,7 @@ Route::middleware([CheckAdmin::class])->group(function () { // ham kiem tra admi
     Route::get('admin/events/search', [EventController::class, 'search'])->name('admin.events.search');// yeu cau tim kiem su kien
 
     Route::get('/admin/events/create', [EventController::class, 'create'])->name('admin.events.create');//yeu cau tao moi su kien
-    Route::post('/admin/events/create/process', [EventController::class, 'store'])->name('admin.events.create.process');
+    Route::post('/admin/events/create/process', [EventController::class, 'store'])->name('admin.events.create.process'); // tao moi su kien va luu 
 
     Route::post('/admin/events/delete', [EventController::class, 'delete'])->name('admin.events.delete');
 
