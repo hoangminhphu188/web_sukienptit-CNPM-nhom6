@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class CheckAdminNotLogin
+class CheckAdminNotLogin // kiem tra admin chua dang nhap
 {
     /**
      * Handle an incoming request.
@@ -16,10 +16,10 @@ class CheckAdminNotLogin
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->session()->exists('admin')) {
-            return redirect()->route('admin.events.index');
+        if ($request->session()->exists('admin')) { //kiem tra trong session neu co admin 
+            return redirect()->route('admin.events.index');// tra ve file index
         } else {
-            return $next($request);
+            return $next($request);//di tiep
         }
     }
 }
