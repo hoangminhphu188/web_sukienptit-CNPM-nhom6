@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 class EventController extends Controller
 {
     public $paginate = 10;
-//ham index hien thi danh sach event trang 
+//ham index hien thi danh sach event trang admin
     public function index()
     {
         $events = Event::orderBy('id', 'DESC')->paginate($this->paginate);
