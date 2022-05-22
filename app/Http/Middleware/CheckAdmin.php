@@ -14,12 +14,12 @@ class CheckAdmin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next)
+    public function handle(Request $request, Closure $next) //ham kiem tra dang nhap admin
     {
-        if ($request->session()->exists('admin')) {
-            return $next($request);
+        if ($request->session()->exists('admin')) { // kiem tra xem trong session da co admin hay chua 
+            return $next($request);//neu co roi cho di tiep
         } else {
-            return redirect()->route('admin.login')->withErrors('You must login first!');
+            return redirect()->route('admin.login')->withErrors('You must login first!');//neu chua cho quay ve trang login 
         }
     }
 }
