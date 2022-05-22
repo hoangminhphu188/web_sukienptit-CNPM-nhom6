@@ -37,7 +37,7 @@ Route::middleware([CheckAdminNotLogin::class])->group(function () { // ham kiem 
 });
 
 Route::middleware([CheckAdmin::class])->group(function () { // ham kiem tra admin da dang nhap
-    Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.auth.logout');
+    Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.auth.logout');//yeu cau logout
 
     Route::get('/admin/events', [EventController::class, 'index'])->name('admin.events.index');
     Route::post('/admin/events/status', [EventController::class, 'status'])->name('admin.events.status');
