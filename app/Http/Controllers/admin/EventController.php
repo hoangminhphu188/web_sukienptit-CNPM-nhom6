@@ -41,7 +41,7 @@ class EventController extends Controller
 
         return view('admin.events.index', compact('events', 'keyword', 'status'));
     }
-
+// ham tao moi event
     public function create()
     {
         return view('admin.events.create');
