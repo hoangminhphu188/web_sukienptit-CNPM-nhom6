@@ -109,7 +109,7 @@ class EventController extends Controller
         $event->save();
         return redirect()->route('admin.events.index')->with('success', 'Event created successfully!');
     }
-
+// ham chinh sua event
     public function edit($id)
     {
         $event = Event::find($id);
@@ -117,7 +117,7 @@ class EventController extends Controller
         $event->free_food = $this->jsonToTagsinput($event->free_food);
         return view('admin.events.edit', compact('event'));
     }
-
+// ham cap nhat event
     public function update(Request $request, $id)
     {
         $this->validate(
