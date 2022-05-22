@@ -26,7 +26,7 @@
                     </div>
                     @endif
                     <form method="post" action="{{ route('admin.events.edit.process', $event->id) }}"
-                        enctype="multipart/form-data">
+                        enctype="multipart/form-data">//form du lieu sua event
                         @csrf
                         <div class="row">
                             <div class="col-md-5 col-sm-5">
