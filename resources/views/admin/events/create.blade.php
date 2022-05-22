@@ -1,4 +1,5 @@
 @extends('layouts.base') @section('body')
+// xay dung trang tạo sự kiện của admin
 
 <body>
     <!-- Navbar -->
