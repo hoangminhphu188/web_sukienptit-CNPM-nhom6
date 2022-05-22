@@ -10,11 +10,12 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+// ham index tra ve trang login
     public function index()
     {
         return view('login');
     }
-
+// ham kt login 
     public function login(Request $request)
     {
         $this->validate($request, [
