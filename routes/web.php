@@ -40,7 +40,7 @@ Route::middleware([CheckAdmin::class])->group(function () { // ham kiem tra admi
     Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.auth.logout');//yeu cau logout
 
     Route::get('/admin/events', [EventController::class, 'index'])->name('admin.events.index');//yeu cau xem thong tin chi tiet su kien
-    Route::post('/admin/events/status', [EventController::class, 'status'])->name('admin.events.status');
+    Route::post('/admin/events/status', [EventController::class, 'status'])->name('admin.events.status');// yeu cau doi trang thai cua su kien
     Route::get('admin/events/search', [EventController::class, 'search'])->name('admin.events.search');
 
     Route::get('/admin/events/create', [EventController::class, 'create'])->name('admin.events.create');
