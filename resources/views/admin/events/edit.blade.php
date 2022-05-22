@@ -1,6 +1,6 @@
 @extends('layouts.base')
 @section('body')
-
+// trang chỉnh sửa sự kiện (thuộc quyền admin)
 <body>
     <!-- Navbar -->
     @include('layouts.admin.navbar')
