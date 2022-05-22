@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.base') // xay dung trang about us giới thiệu về các thành viên tham gia 
 @section('body')
 <body>
     <!-- Navbar -->
