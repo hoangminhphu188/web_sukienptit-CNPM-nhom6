@@ -20,13 +20,13 @@ use App\Http\Controllers\user\UserEventController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// ham tra ve trang chu chinh
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('events', [UserController::class, 'events'])->name('user.events.index');
-Route::get('events/search', [UserController::class, 'eventsSearch'])->name('user.events.search');
+Route::get('events', [UserController::class, 'events'])->name('user.events.index'); // yeu cau den trang cac su kien 
+Route::get('events/search', [UserController::class, 'eventsSearch'])->name('user.events.search');// yeu cau tim su kien
 
 Route::get('about', [UserController::class, 'about'])->name('user.about.index');
 
