@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.base') // báo lỗi khi không có route khi đăng nhập 
 @section('body')
 
     <body>
