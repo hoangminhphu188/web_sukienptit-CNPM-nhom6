@@ -1,6 +1,6 @@
-@extends('layouts.base')
+@extends('layouts.base') 
 @section('body')
-
+// xay dung trang su kien chung cua web
 <body>
     <!-- Navbar -->
     @include('layouts.user.navbar')
