@@ -1,6 +1,6 @@
 @extends('layouts.base')
 @section('body')
-
+// xay dung trang Home
 <body class="full-screen register">
     <!-- Navbar -->
     @include('layouts.user.navbar')
