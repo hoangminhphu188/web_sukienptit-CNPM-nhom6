@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.base') // thông báo về các lỗi khác xảy ra trong khi hoạt động web
 @section('body')
 
     <body>
