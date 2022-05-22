@@ -48,6 +48,6 @@ Route::middleware([CheckAdmin::class])->group(function () { // ham kiem tra admi
 
     Route::post('/admin/events/delete', [EventController::class, 'delete'])->name('admin.events.delete');//yeu cau xoa su kien
 
-    Route::get('/admin/events/{id}/edit', [EventController::class, 'edit'])->name('admin.events.edit');
-    Route::post('/admin/events/{id}/edit/process', [EventController::class, 'update'])->name('admin.events.edit.process');
+    Route::get('/admin/events/{id}/edit', [EventController::class, 'edit'])->name('admin.events.edit');// yeu cau chinh sua su kien 
+    Route::post('/admin/events/{id}/edit/process', [EventController::class, 'update'])->name('admin.events.edit.process');// chinh sua su kien va update
 });
