@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width" />
 
     <link href="{{ asset('assets') }}/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="{{ asset('assets') }}/css/paper-kit.css?v=2.1.0" rel="stylesheet" />
+    <link href="{{ asset('assets') }}/css/paper-kit.css?v=2.1.0" rel="stylesheet" /> // tham khảo ,mượn của bạn 
     <link href="{{ asset('assets') }}/css/demo.css" rel="stylesheet" />
 
-    <!--     Fonts and icons     -->
+    <!--     Fonts and icons     --> // icons và font cho web
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/151512c8c9.js" crossorigin="anonymous"></script>
     <link href="{{ asset('assets') }}/css/nucleo-icons.css" rel="stylesheet">
